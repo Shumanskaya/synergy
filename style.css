@@ -458,21 +458,22 @@ div.radio_input {
     color: white;
 }
 /*POPUP FORM*/
-.popUp_wrapper {
-    width: 50%;
+@media (min-width: 768px) {
+    .popup_wrapper {
+        width: 100%;
+    }
 }
-.form_popup input[type='text'], .form_popup input[type='tel'], .form_popup input[type='email'], .form_popup input[type='radio'], .form_popup input[type='checkbox'], .form_popup .radio_button {
-    width: 100%;
+@media (min-width: 992px) {
+    .popup_wrapper {
+        width: 60%;
+    }
 }
-
-.form_popup .radio_input {
-    width: 30%;
-    margin: auto 0;
+@media (min-width: 1200px) {
+    .popup_wrapper {
+        width: 30%;
+    }
 }
-
-.form_popup .btn_violet {
-    width: 30%;
-}
+/**/
 @media (max-width: 1196px) {
     .box_beffore1::before, .box_beffore2::before, .box_beffore3::before {
         content: '';

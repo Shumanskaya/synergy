@@ -328,9 +328,9 @@
         <!-- END FOOTER -->
 
         <!-- FORM POP UP -->
-        <div class="container popUp_wrapper" id="data" style="display: none">
-            <div class="row form form_popup">
-                <div class="col-md-12 form_header text-center">
+        <div class="container popup_wrapper" id="data" style="display: none">
+            <div class="row form text-center">
+                <div class="col-md-12 form_header">
                     <h1 class="text-uppercase white_color">записаться</h1>
                     <p class="white_color">на практическую лекцию</p>
                 </div>
@@ -339,23 +339,18 @@
                         <input type="text" placeholder="Введите ваше имя">
                         <input type="tel" placeholder="Введите Ваш телефон">
                         <input type="email" placeholder="Введите ваш e-mail">
-                            <div class="radio_input">
-                                <input type="radio" name='participant_popup' id='live-radio-popup' value="live_participant_popup" checked>
-                                <label for="live-radio-popup">
-                                    <img src="./img/live_form.png" alt="" width="30%" class="hidden_image">
-                                    <p class="text-uppercase">живое участие</p>
-                                </label>
-                                <input type="radio" name='participant_popup' id='online-radio-popup' value="live_participant_popup">
-                                <label for="online-radio-popup">
-                                    <img src="./img/online_form.png" alt="" class="hidden_image">
-                                    <p class="text-uppercase">участие онлайн</p>
-                                </label>
-                            </div>
-                            <button class="btn_violet">
-                                <p class="text-uppercase">
-                                    <strong>отправить заявку</strong>
-                                </p>
-                            </button>
+                        <div class="radio_input">
+                            <input type="radio" name='participant_popUp' id='live-radio-popUp' value="live_participant_popUp" checked>
+                            <label for="live-radio-popUp">
+                                <img src="./img/live_form.png" alt="" class="hidden_image">
+                                <p class="text-uppercase">живое участие</p>
+                            </label>
+                            <input type="radio" name='participant_popUp' id='online-radio-popUp' value="online_participant_popUp">
+                            <label for="online-radio-popUp">
+                                <img src="./img/online_form.png" alt="" class="hidden_image">
+                                <p class="text-uppercase">участие онлайн</p>
+                            </label>
+                        </div>
                         <div class="checkbox_input">
                             <label for="agree">
                                 <input type="checkbox" name='agree'>
@@ -364,6 +359,11 @@
                             <p class="text-uppercase white_color">Согласен получать новости о ЗВЕЗДНЫХ лекциях и курсах
                             </p>
                         </div>
+                        <button class="btn_violet">
+                            <p class="text-uppercase">
+                                <strong>отправить заявку</strong>
+                            </p>
+                        </button>
                     </form>
                     <div class="number_place">
                         <p class="text-uppercase">количество мест ограничено: 200</p>
@@ -371,6 +371,8 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 
     <!-- VIDEO -->
