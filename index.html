@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Synergy_TEST</title>
+</head>
+
+<body>
+    <div class="container-fluid wrapper">
+        <div class="container-fluid header">
+            <div class="container">
+                <div class="row contact">
+                    <div class='col-sm-12 col-md-12 col-lg-12 col-xl-7 offset-xl-1 logo'>
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 phone">
+                                        <p class="green_color">
+                                            <img src="./img/Shape_88_copy_6.png" alt=""> 8-800-100-17-46</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 mail">
+                                        <p class="green_color">
+                                            <img src="./img/mail.png" alt="">Lectorium@Synergy.ru</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 address">
+                                <p>
+                                    <img src="./img/metro.png" alt="">
+                                    <strong>Семеновская</strong>
+                                </p>
+                                <p>
+                                    <a class="green_color" class="fancybox fancybox.iframe" data-fancybox-type="iframe" id='clickMaps' href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.5522476902634!2d37.71706621593166!3d55.78364798056156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b535134ad4a323%3A0xd3aff765cfaf741d!2z0JjQt9C80LDQudC70L7QstGB0LrQuNC5INCS0LDQuyDRg9C7LiwgMiwg0JzQvtGB0LrQstCwLCAxMDUzMTg!5e0!3m2!1sru!2sru!4v1545127737415'>Москва, Измайловский Вал, дом 2, корпус 1</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class='col-sm-12 col-md-6 col-lg-6 col-xl-7 offset-xl-1'>
+                        <div class="row">
+                            <div class="col-md-12 d-flex align-items-center">
+                                <div class="date green_color">
+                                    <h1>
+                                        <strong>10</strong>
+                                    </h1>
+                                </div>
+                                <div class="time green_color">
+                                    <h2>
+                                        <strong>ноября</strong>
+                                    </h2>
+                                    <h2>В 19:00</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-12 green_color">
+                                <p>
+                                    <strong>Бесплатная лекция и онлайн-трансляция</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row lectorium_name">
+                            <div class='col-sm-12 col-md-6'>
+                                <h1 class="violet_color text-uppercase">
+                                    <strong>бхригу йога</strong>
+                                </h1>
+                                <h3 class="violet_color text-uppercase">
+                                    <strong>вдохновение на перемены</strong>
+                                </h3>
+                                <a class="fancybox fancybox.iframe" data-fancybox-type="iframe" id='clickVideo' href='http://www.youtube.com/embed/NXB5Ied4Veg?autoplay=1'>
+                                    <img src="./img/play_img.png" alt="" width="25%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                        <div class="row form text-center">
+                            <div class="col-md-12 form_header">
+                                <h1 class="text-uppercase white_color">записаться</h1>
+                                <p class="white_color">на практическую лекцию</p>
+                            </div>
+                            <div class="col-md-12">
+                                <form action="">
+                                    <input type="text" placeholder="Введите ваше имя">
+                                    <input type="tel" placeholder="Введите Ваш телефон">
+                                    <input type="email" placeholder="Введите ваш e-mail">
+                                    <div class="radio_input">
+                                        <input type="radio" name='participant' id='live-radio' value="live_participant" checked>
+                                        <label for="live-radio">
+                                            <img src="./img/live_form.png" alt="" width="30%" class="hidden_image">
+                                            <p class="text-uppercase">живое участие</p>
+                                        </label>
+                                        <input type="radio" name='participant' id='online-radio' value="online_participant">
+                                        <label for="online-radio">
+                                            <img src="./img/online_form.png" alt="" class="hidden_image">
+                                            <p class="text-uppercase">участие онлайн</p>
+                                        </label>
+                                    </div>
+                                    <div class="checkbox_input">
+                                        <label for="agree">
+                                            <input type="checkbox" name='agree'>
+                                            <div class="chekInp"></div>
+                                        </label>
+                                        <p class="text-uppercase white_color">Согласен получать новости о ЗВЕЗДНЫХ лекциях и курсах
+                                        </p>
+                                    </div>
+                                    <button class="btn_violet">
+                                        <p class="text-uppercase">
+                                            <strong>отправить заявку</strong>
+                                        </p>
+                                    </button>
+                                </form>
+                                <div class="number_place">
+                                    <p class="text-uppercase">количество мест ограничено: 200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center reccomend">
+                            <p class="text-uppercase">рекомендовать друзьям</p>
+                            <div class="social">
+                                <img src="./img/vk.png" alt="">
+                                <img src="./img/f.png" alt="">
+                                <img src="./img/g.png" alt="">
+                                <img src="./img/tw.png" alt="">
+                                <img src="./img/ok.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTACT -->
+        </div>
+        <!-- END HEADER -->
+        <!-- SECTION 1 -->
+        <div class="container-fluid section_1">
+            <div class="container">
+                <div class="row section_1_header violet_color">
+                    <div class="col-sm-12 col-md-8 d-flex align-items-center box_beffore1">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-8">
+                                <h2>
+                                    <strong>Что вы узнаете на лекции?</strong>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hidden color_onePink box_beffore2"></div>
+                </div>
+                <div class="row lection_list violet_color">
+                    <div class="col-md-4 color_onePink box_beffore3">
+                        <h4>01</h4>
+                        <p>Что такое Бхригу йога, и как она поможет мне создать жизнь моей мечты?</p>
+                    </div>
+                    <div class="col-md-4 color_twoPink">
+                        <h4>02</h4>
+                        <p>5 техник, вдохновляющие на перемены, от вице-президента Федерации Йоги Индии</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>03</h4>
+                        <p>Почему медитация - это путь к вдохновению, путешествие к новыми горизонтам</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>04</h4>
+                        <p>Методы Бхригу йоги как особый инструмент внутренней борьбы над телом и умом</p>
+                    </div>
+                    <div class="col-md-4 color_threePink">
+                        <h4>05</h4>
+                        <p>Особые методы концентрации и релаксации</p>
+                    </div>
+                    <div class="col-md-4 color_onePink">
+                        <h4>06</h4>
+                        <p>Причины потери вдохновения</p>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-12 col-md-5">
+                                <a id='inline' href='#data'>
+                                    <button class='btn_violet text-uppercase'>
+                                        <strong>Принять участие</strong>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-5 ">
+                                <p class="text-uppercase green_color">количество мест ограничено: 200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hidden"></div>
+                </div>
+            </div>
+            <!-- END SECTION 1 -->
+            <!-- SECTION 2 -->
+            <div class="row section_2">
+                <div class="col-md-12 col-lg-6 section_2_img1 hidden">
+                </div>
+                <div class="col-md-12 col-lg-6 section_2_img2 white_color d-flex justify-content-md-around flex-column">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4 mt_1vw">
+                            <h2>
+                                <strong>Лекция для вас, если вы:</strong>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center">
+                            <img src="./img/img1.png" alt="">
+                            <p>Увлекаетесь йогой</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center">
+                            <img src="./img/img2.png" alt="">
+                            <p>Интересуетесь культурно-философским наследием Индии</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-center">
+                            <img src="./img/img3.png" alt="">
+                            <p>Хотите узнать новые принципы работы с телом и умом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SECTION 2 -->
+        <!-- SECTION 3 -->
+        <div class="container-fluid section_3">
+            <div class="row">
+                <div class="col-sm-4 section_speakers d-flex align-items-end justify-content-end">
+                    <div class="photo_speakers">
+                        <img src="./img/section3_img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-8 violet_color d-flex align-items-center section_3_information">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <h1>Трехдневный интенсив</h1>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <h3>Лечение и профилактика психосоматических и эндокринных заболеваний методами Бхригу йоги</h3>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-8">
+                            <p>Вы познакомитесь с особенностями методов и получите пошаговый алгоритм достижения физического
+                                и психического благополучия
+                            </p>
+                        </div>
+                        <div class="col-md-12 col-lg-9 section_timing">
+                            <div class="row d-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="date green_color">
+                                        <h1>
+                                            <strong>11</strong>
+                                        </h1>
+                                    </div>
+                                    <div class="time green_color">
+                                        <h2>
+                                            <strong>ноября</strong>
+                                        </h2>
+                                        <h2>19:00-21.00</h2>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="date green_color">
+                                        <h1>
+                                            <strong>12</strong>
+                                        </h1>
+                                    </div>
+                                    <div class="time green_color">
+                                        <h2>
+                                            <strong>ноября</strong>
+                                        </h2>
+                                        <h2>11:00-17:30</h2>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="date green_color">
+                                        <h1>
+                                            <strong>13</strong>
+                                        </h1>
+                                    </div>
+                                    <div class="time green_color">
+                                        <h2>
+                                            <strong>ноября</strong>
+                                        </h2>
+                                        <h2>11:00-17:30</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+                            <a id='clickMe' href='#data'>
+                                <button class='btn_transparent text-uppercase'>узнать больше</button>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 information_tickets">
+                            <p>Вы можете приобрести билет на 1, 2 или 3 дня</p>
+                            <p>Запись и дополнительная информация по телефону
+                                <strong>+7 999 768 36 38</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SECTION 3 -->
+        <!-- FOOTER -->
+        <div class="container-fluid footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 mt_1vw">
+                        <p class="text-left">&#169 2016 Synergy Lectorium</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 mt_1vw">
+                        <p class="text-right">Политика конфиденциальности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+
+        <!-- FORM POP UP -->
+        <div class="container popUp_wrapper" id="data" style="display: none">
+            <div class="row form form_popup">
+                <div class="col-md-12 form_header text-center">
+                    <h1 class="text-uppercase white_color">записаться</h1>
+                    <p class="white_color">на практическую лекцию</p>
+                </div>
+                <div class="col-md-12">
+                    <form action="">
+                        <input type="text" placeholder="Введите ваше имя">
+                        <input type="tel" placeholder="Введите Ваш телефон">
+                        <input type="email" placeholder="Введите ваш e-mail">
+                            <div class="radio_input">
+                                <input type="radio" name='participant_popup' id='live-radio-popup' value="live_participant_popup" checked>
+                                <label for="live-radio-popup">
+                                    <img src="./img/live_form.png" alt="" width="30%" class="hidden_image">
+                                    <p class="text-uppercase">живое участие</p>
+                                </label>
+                                <input type="radio" name='participant_popup' id='online-radio-popup' value="live_participant_popup">
+                                <label for="online-radio-popup">
+                                    <img src="./img/online_form.png" alt="" class="hidden_image">
+                                    <p class="text-uppercase">участие онлайн</p>
+                                </label>
+                            </div>
+                            <button class="btn_violet">
+                                <p class="text-uppercase">
+                                    <strong>отправить заявку</strong>
+                                </p>
+                            </button>
+                        <div class="checkbox_input">
+                            <label for="agree">
+                                <input type="checkbox" name='agree'>
+                                <div class="chekInp"></div>
+                            </label>
+                            <p class="text-uppercase white_color">Согласен получать новости о ЗВЕЗДНЫХ лекциях и курсах
+                            </p>
+                        </div>
+                    </form>
+                    <div class="number_place">
+                        <p class="text-uppercase">количество мест ограничено: 200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEO -->
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
